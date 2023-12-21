@@ -1,83 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px; 
+    background-color: gray;
+}
+
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 3%;
     background-color: green;
     color: #fff;
 }
 
-header > nav {
+nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 3%;
-    gap: 18%;
-    background-color: gray;
+
+    color: gray;
+    flex-shrink: 2;
+    flex-grow: 1;
 }
 
 h1 {
-    padding-left: 7%;
     font-size: 300%;
 }
 
 h2 {
     font-size: 250%;
+    align-items: center;
 }
 
 button {
     display: flex;
     justify-content: space-between;
-    font-family: 'Times New Roman', Times, serif;
+    border-color: black;
+    border-style: groove;
+    border-width: 4px;
     font-size: 150%;
-}
-
-div > nav {
-    display: flex;
-    justify-content: space space-between;
-}
-
-div > h2 {
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
-    gap: 18%
-
 }
 
 section {
     display: flex;
     column-count: 2;
+    flex-wrap: wrap;
 
 }
 
 .about-me {
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
     width: 50%;
-    height: 100%;
+    height: 75%;
     justify-content: center;
+    align-items: center;
 }
 
 .work {
+    box-sizing: border-box;
     display: flex;
+    flex-grow: 0;
     width: 50%;
-    height: 100%;
-    display: inline-block;
-    float: right;
+    height: 75%;
+
 }
 
 footer {
-    display: block;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content:center;
     align-items: center;
     background-color: green;
     gap: 13%;
+    width: 100%;
+    margin-bottom: 0%;
 }
 
-body {
-    background-color: gray;
+ul {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+li {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+img {
+    margin: 5 px;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        align-items: center;
+        float: none;
+        width: 100%;
+    }
+
+    .work {
+        float: none;
+        width: 100%;
+    }
 }
